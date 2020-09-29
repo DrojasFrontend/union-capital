@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+  z-index: 1;
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    &.active {
+      a {
+        border-bottom: 1px solid;
+      }
+    }
+    a {
+      padding-left: 20px;
+      color: $color__secondary;
+      text-decoration: none;
+    }
+  }
+}
